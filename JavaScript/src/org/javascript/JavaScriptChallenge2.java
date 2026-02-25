@@ -41,8 +41,5 @@ public class JavaScriptChallenge2 {
 		WebElement loginBtn = driver.findElement(By.name("login"));
 		js.executeScript("arguments[0].click()", loginBtn);
 		
-		
-	
 }
-
 }
