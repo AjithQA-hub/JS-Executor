@@ -34,9 +34,6 @@ public class JavaScriptChallenge1 {
 	        System.out.println(txt2);
 			
 			WebElement loginBtn = driver.findElement(By.name("login"));
-			js.executeScript("arguments[0].click()", loginBtn);
-			
-			
+			js.executeScript("arguments[0].click()", loginBtn);	
 	}
-
 }
