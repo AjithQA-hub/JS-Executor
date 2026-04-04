@@ -11,13 +11,9 @@ public class JavaScriptTask4 {
 	public static void main(String[] args) {
 		
         System.setProperty("webdriver.chrome.driver","C:\\Users\\AJITH\\eclipse-workspace\\JavaScript\\Drivers\\chromedriver.exe");
-		
 		WebDriver driver=new ChromeDriver();
-		
 		driver.get("https://en-gb.facebook.com/");
-		
 		driver.manage().window().maximize();
-		
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		
 		WebElement email = driver.findElement(By.id("email"));
@@ -29,5 +25,4 @@ public class JavaScriptTask4 {
 		WebElement loginBtn = driver.findElement(By.name("login"));
 		js.executeScript("arguments[0].click()", loginBtn);
 	}
-
 }
