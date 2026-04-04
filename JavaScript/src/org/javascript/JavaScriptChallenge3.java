@@ -10,13 +10,9 @@ public class JavaScriptChallenge3 {
 	
 	public static void main(String[] args) {
 		
-		
     	System.setProperty("webdriver.chrome.driver","C:\\Users\\AJITH\\eclipse-workspace\\JavaScript\\Drivers\\chromedriver.exe");
-		
 		WebDriver driver=new ChromeDriver();
-		
 		driver.get("https://demo.guru99.com/test/guru99home/");
-		
 		driver.manage().window().maximize();
 		
 	   //object for java Script Executor
@@ -24,7 +20,5 @@ public class JavaScriptChallenge3 {
 	   
 	   WebElement iFrameTxt = driver.findElement(By.xpath("//h3[contains(text(),'adBlock')]"));
 	   js.executeScript("arguments[0].scrollIntoView(true)", iFrameTxt); 
-	   
 	}
-
 }
