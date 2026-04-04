@@ -11,11 +11,8 @@ public class JavaScriptTask2 {
 	public static void main(String[] args) throws InterruptedException {
 		
         System.setProperty("webdriver.chrome.driver","C:\\Users\\AJITH\\eclipse-workspace\\JavaScript\\Drivers\\chromedriver.exe");
-		
 		WebDriver driver=new ChromeDriver();
-		
 		driver.get("https://toolsqa.com");
-		
 		driver.manage().window().maximize();
 		
 		 JavascriptExecutor js=(JavascriptExecutor)driver;
@@ -24,10 +21,8 @@ public class JavaScriptTask2 {
 		   js.executeScript("arguments[0].scrollIntoView(true)", a);
 		   
 		   Thread.sleep(3000);
-		   
+	
 		   WebElement a1= driver.findElement(By.xpath("//div[contains(text(),'Online')]"));
 		   js.executeScript("arguments[0].scrollIntoView(true)", a1);
-		
 	}
-
 }
